@@ -21,11 +21,13 @@ int countWords(string str)
 {
 	int numWords = 1;
 	char c;
+	char d;
 	for (int i = 0; i < str.length(); i++)
 	{
 		c = str[i];
+		d = str[i + 1];
 
-		if (c == ' ')
+		if (c == ' ' && d != ' ')
 		{
 			numWords++;
 		}
